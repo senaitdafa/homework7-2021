@@ -2,7 +2,7 @@ var video;
 
 window.addEventListener("load", function() {
 	console.log("Good job opening the window");
-	video = document.querySelector("#video");
+	video = document.querySelector("video");
 });
 
 document.querySelector("#play").addEventListener("click", function() {

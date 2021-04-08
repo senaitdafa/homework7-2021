@@ -18,8 +18,20 @@ document.querySelector("#pause").addEventListener("click", function() {
 document.querySelector("#slower").addEventListener("click", function() {
 	console.log("Slow Video");
 	video.playbackRate = 0.95;
+	console.log(video.playbackRate);
 });
 document.querySelector("#faster").addEventListener("click", function() {
 	console.log("Speed Video");
 	video.playbackRate = 1.05;
+	console.log(video.playbackRate)
+});
+document.querySelector("#skip").addEventListener("click", function() {
+	console.log("Skip Video");
+	if (video.currentTime + 15 >= video.duration){
+		video.currentTime = 0;
+		console.log("return to beginning")
+	}
+	else{
+		video.currentTime +=15
+	}
 });

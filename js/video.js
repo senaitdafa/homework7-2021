@@ -54,6 +54,6 @@ document.querySelector("#mute").addEventListener("click", function(){
 
 document.querySelector("#slider").addEventListener("change", function() {
 	console.log("update slider number");
-	document.querySelector("#volume").innerHTML = this.value + "%";
+	document.querySelector("#volume").innerHTML = this.value;
 
 });

@@ -57,5 +57,9 @@ document.querySelector("#slider").addEventListener("change", function() {
 
 });
 document.querySelector("#vintage").addEventListener("click", function() {
-	video.oldSchool();
+	video.setAttribute("oldSchool","video")
+});
+
+document.querySelector("#orig").addEventListener("click", function() {
+	video.removeAttribute("oldSchool")
 });
